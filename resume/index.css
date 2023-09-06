@@ -1,0 +1,113 @@
+/* Reset default styling */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+/* Header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: backwards;
+    opacity: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff8c00;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+    text-align: center;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+/* Projects */
+.project {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: backwards;
+    opacity: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: backwards;
+    opacity: 0;
+}
+
+/* Animations */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
